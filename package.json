@@ -1,0 +1,12 @@
+{
+  "name": "studysite",
+  "version": "1.0.0",
+  "description": "study node.js and express",
+  "main": "index.js",
+  "scripts": {},
+  "author": "UmanProger",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

@@ -1,0 +1,10 @@
+https://youtu.be/iuRre1bZ9jw?t=21
+
+npm init
+
+https://www.npmjs.com/package/express
+
+npm i express
+
+--------------------------------------
+00 : 22 : 37

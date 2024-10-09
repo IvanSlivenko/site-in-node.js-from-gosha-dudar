@@ -5,22 +5,26 @@ const express = require('express');
 
 const app = express();
 
+app.set('view engine', 'ejs');
+app.set('views', './templates');
+app.use(express.static('public'));
+
 let PORT = 3001;
 
 app.get('/', function (req, res) {
-    // res.send(__dirname + '/templates/index.html');
-    res.sendFile(__dirname + '/templates/index.html');
+    res.render('index', {name:"Ivan", id: 4});
 
-    // res.end();
   })
 
   app.get('/about', function (req, res) {
-    // res.send('About express');
-    res.sendFile(__dirname + '/templates/about.html');
-    // res.end();
-  })  
+    res.render('about');  
+  }) 
+  
+  app.get('/blog', function (req, res) {
+    res.render('blog');  
+  }) 
   
   app.listen(PORT , ()=>{
-    console.log(`Старт сервера відбувся : http://localchost:${PORT}`);
+    console.log(`Старт сервера відбувся : http://localhost:${PORT}`);
     
   })
